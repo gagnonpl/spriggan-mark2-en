@@ -7,6 +7,7 @@ This version provides the following:
 - Translated title cards and character labels
 - Translated in-level dialogue
 - Translated menus, ending sequence, and credits
+- Auto-save QoL feature: Continue from last finished level
 
 English text that was already present in the game hasn't been modified except for obvious errors.
 
@@ -74,6 +75,9 @@ Use the exact source image listed below. The patch will not apply correctly to a
 ## Checksums
 
 ### Expected source image
+
+**TOSEC set:** `NEC PC-Engine CD & TurboGrafx-16 CD - Games - [IMG]`  
+**TOSEC name:** `Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP)`
 
 | Hash | Value |
 | --- | --- |

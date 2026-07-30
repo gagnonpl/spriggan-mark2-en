@@ -9,6 +9,7 @@ This version provides the following:
   Translated title cards and character labels
   Translated in-level dialogue
   Translated menus, ending sequence, and credits
+  Auto-save QoL feature: Continue from last finished level
 
 Downloads
 =========
@@ -34,15 +35,17 @@ Checksums
 
 Expected source image:
 
-  CRC32: DBE38C87
-  MD5:   bf28ca897aebb9a8c0f49589edc3d6a9
-  SHA-1: 93e68a7202ebd31f84ab173458ba61060a6bebb5
+  TOSEC set:  NEC PC-Engine CD & TurboGrafx-16 CD - Games - [IMG]
+  TOSEC name: Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP)
+  CRC32:      DBE38C87
+  MD5:        bf28ca897aebb9a8c0f49589edc3d6a9
+  SHA-1:      93e68a7202ebd31f84ab173458ba61060a6bebb5
 
 Patched output image:
 
-  CRC32: 5BAE39BD
-  MD5:   19ff41061bbacd4b4a2ad5d129200670
-  SHA-1: 7438773a6038c05807393c1259548486b77485cf
+  CRC32:      5BAE39BD
+  MD5:        19ff41061bbacd4b4a2ad5d129200670
+  SHA-1:      7438773a6038c05807393c1259548486b77485cf
 
 
 Credits
