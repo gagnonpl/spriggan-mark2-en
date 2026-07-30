@@ -94,6 +94,9 @@ Use the exact source image listed below. The patch will not apply correctly to a
 | MD5 | 19ff41061bbacd4b4a2ad5d129200670 |
 | SHA-1 | 7438773a6038c05807393c1259548486b77485cf |
 
+### ROMhacking.net
+https://www.romhacking.net/translations/7662/
+
 ## Credits
 
 English version by **Luke Gagnon**.

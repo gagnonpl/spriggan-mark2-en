@@ -48,6 +48,11 @@ Patched output image:
   SHA-1:      7438773a6038c05807393c1259548486b77485cf
 
 
+ROMhacking.net
+==============
+https://www.romhacking.net/translations/7662/
+
+
 Credits
 =======
 
