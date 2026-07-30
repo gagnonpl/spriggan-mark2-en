@@ -6,40 +6,55 @@ This version provides the following:
 - English subtitles for voiced cutscenes
 - Translated title cards and character labels
 - Translated in-level dialogue
-- Translated menus, ending text, and credits
+- Translated menus, ending sequence, and credits
 
 English text that was already present in the game hasn't been modified except for obvious errors.
 
-<p align="center">
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/title.png">
-    <img src="screenshots/title.png" width="320" alt="Title screen" />
-  </a>
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/cutscenes.png">
-    <img src="screenshots/cutscenes.png" width="320" alt="Cutscenes subtitles" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/level.png">
-    <img src="screenshots/level.png" width="320" alt="In-level dialogue" />
-  </a>
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/cutscenes-2.png">
-    <img src="screenshots/cutscenes-2.png" width="320" alt="Cutscenes subtitles 2" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/weapons.png">
-    <img src="screenshots/weapons.png" width="320" alt="Weapons selection menu" />
-  </a>
-  <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/main/screenshots/credits.png">
-    <img src="screenshots/credits.png" width="320" alt="Ending credits" />
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/title.png">
+        <img src="screenshots/title.png" width="320" alt="Title screen">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/cutscenes.png">
+        <img src="screenshots/cutscenes.png" width="320" alt="Cutscene subtitles">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/level.png">
+        <img src="screenshots/level.png" width="320" alt="In-level dialogue">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/cutscenes-2.png">
+        <img src="screenshots/cutscenes-2.png" width="320" alt="Cutscene subtitles 2">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/weapons.png">
+        <img src="screenshots/weapons.png" width="320" alt="Weapons selection menu">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/gagnonpl/spriggan-mark2-en/raw/master/screenshots/credits.png">
+        <img src="screenshots/credits.png" width="320" alt="Ending credits">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## Downloads
 
 | File | Description |
 | --- | --- |
-| [`spriggan-mark2-english-v1.0.xdelta`](/releases/latest/download/spriggan-mark2-english-v1.0.xdelta) | xdelta3 patch |
+| [`spriggan-mark2-english-v1.0.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.0.xdelta) | xdelta3 patch |
+| [`spriggan-mark2-english-v1.0.cue`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.0.cue) | cue file |
 | [`README.txt`](/releases/latest/download/README.txt) | Instructions and checksums |
 | [`xdelta3`](https://github.com/jmacd/xdelta-gpl/releases) | Patching tool |
 | [`xdelta3 GUI`](https://github.com/Moodkiller/xdelta3-gui-2.0/releases) | Patching tool (GUI) |

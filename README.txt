@@ -8,11 +8,12 @@ This version provides the following:
   English subtitles for voiced cutscenes
   Translated title cards and character labels
   Translated in-level dialogue
-  Translated menus, ending text, and credits
+  Translated menus, ending sequence, and credits
 
 Downloads
 =========
-
+patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spriggan-mark2-english-v1.0.xdelta
+cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spriggan-mark2-english-v1.0.cue
 xdelta3: https://github.com/jmacd/xdelta-gpl/releases
 xdelta3 GUI: https://github.com/Moodkiller/xdelta3-gui-2.0/releases
 
