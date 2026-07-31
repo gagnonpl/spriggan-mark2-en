@@ -17,18 +17,20 @@ patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spri
 cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spriggan-mark2-english-v1.0.cue
 xdelta3: https://github.com/jmacd/xdelta-gpl/releases
 xdelta3 GUI: https://github.com/Moodkiller/xdelta3-gui-2.0/releases
+(optional): https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.0.ccd
 
 Patching
 ========
 
 Apply the patch with xdelta3:
 
-  xdelta3 -d -s original.img spriggan-mark2-english-v1.0.xdelta spriggan-mark2-english-v1.0.img
+  xdelta3 -d -s "Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP).img" spriggan-mark2-english-v1.0.xdelta spriggan-mark2-english-v1.0.img
 
 Then use the included CUE file to launch the patched image.
 
 Use the exact source image listed below. The patch will not apply correctly to a different dump.
 
+Optionally, a corrected CCD file is provided since the patched image is slightly bigger, but most people shouldn't need that.
 
 Checksums
 =========

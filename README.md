@@ -59,18 +59,20 @@ English text that was already present in the game hasn't been modified except fo
 | [`README.txt`](/releases/latest/download/README.txt) | Instructions and checksums |
 | [`xdelta3`](https://github.com/jmacd/xdelta-gpl/releases) | Patching tool |
 | [`xdelta3 GUI`](https://github.com/Moodkiller/xdelta3-gui-2.0/releases) | Patching tool (GUI) |
-
+| [`spriggan-mark2-english-v1.0.ccd`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.0.ccd) | (optional) ccd file |
 ## Patching
 
 Apply the patch with `xdelta3`:
 
 ```sh
-xdelta3 -d -s original.img spriggan-mark2-english-v1.0.xdelta spriggan-mark2-english-v1.0.img
+xdelta3 -d -s "Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP).img" spriggan-mark2-english-v1.0.xdelta spriggan-mark2-english-v1.0.img
 ```
 
 Then use the included CUE file to launch the patched image.
 
 Use the exact source image listed below. The patch will not apply correctly to a different dump.
+
+Optionally, a corrected CCD file is provided since the patched image is slightly bigger, but most people shouldn't need that.
 
 ## Checksums
 
