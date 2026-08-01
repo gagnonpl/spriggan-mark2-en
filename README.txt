@@ -13,18 +13,18 @@ This version provides the following:
 
 Downloads
 =========
-patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spriggan-mark2-english-v1.0.xdelta
-cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.0/spriggan-mark2-english-v1.0.cue
+patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.xdelta
+cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.cue
 xdelta3: https://github.com/jmacd/xdelta-gpl/releases
 xdelta3 GUI: https://github.com/Moodkiller/xdelta3-gui-2.0/releases
-(optional): https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.0.ccd
+(optional) CCD file: https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.1.ccd
 
 Patching
 ========
 
 Apply the patch with xdelta3:
 
-  xdelta3 -d -s "Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP).img" spriggan-mark2-english-v1.0.xdelta spriggan-mark2-english-v1.0.img
+  xdelta3 -d -s "Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP).img" spriggan-mark2-english-v1.1.xdelta spriggan-mark2-english-v1.1.img
 
 Then use the included CUE file to launch the patched image.
 
@@ -45,9 +45,9 @@ Expected source image:
 
 Patched output image:
 
-  CRC32:      5BAE39BD
-  MD5:        19ff41061bbacd4b4a2ad5d129200670
-  SHA-1:      7438773a6038c05807393c1259548486b77485cf
+  CRC32:      A10B9B00
+  MD5:        547c50946df7b59bf9d44cad8efdc79c
+  SHA-1:      63a9090f69ccb0abbf1a2f2049564ea9f7b54c1f
 
 
 ROMhacking.net
