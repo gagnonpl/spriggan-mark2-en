@@ -16,7 +16,6 @@ Downloads
 patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.xdelta
 cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.cue
 xdelta3: https://github.com/jmacd/xdelta-gpl/releases
-xdelta3 GUI: https://github.com/Moodkiller/xdelta3-gui-2.0/releases
 (optional) CCD file: https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.1.ccd
 
 Patching

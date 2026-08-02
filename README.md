@@ -58,7 +58,6 @@ English text that was already present in the game hasn't been modified except fo
 | [`spriggan-mark2-english-v1.1.cue`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.1.cue) | CUE file |
 | [`README.txt`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/README.txt) | Instructions and checksums |
 | [`xdelta3`](https://github.com/jmacd/xdelta-gpl/releases) | Patching tool |
-| [`xdelta3 GUI`](https://github.com/Moodkiller/xdelta3-gui-2.0/releases) | Patching tool (GUI) |
 | [`spriggan-mark2-english-v1.1.ccd`](https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.1.ccd) | (optional) CCD file |
 ## Patching
 
