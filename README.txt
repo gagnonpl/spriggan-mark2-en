@@ -13,41 +13,47 @@ This version provides the following:
 
 Downloads
 =========
-patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.xdelta
-cue file: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.1/spriggan-mark2-english-v1.1.cue
-xdelta3: https://github.com/jmacd/xdelta-gpl/releases
-(optional) CCD file: https://github.com/gagnonpl/spriggan-mark2-en/releases/latest/download/spriggan-mark2-english-v1.1.ccd
+patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-v1.2.xdelta
+xdelta-multifile: https://github.com/gagnonpl/xdelta-multifile/releases
 
 Patching
 ========
 
-Apply the patch with xdelta3:
+The patch modifies Tracks 02 and 37 of the Redump disc image. Apply it with xdelta-multifile:
 
-  xdelta3 -d -s "Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP).img" spriggan-mark2-english-v1.1.xdelta spriggan-mark2-english-v1.1.img
+1. Extract the complete Redump BIN/CUE set.
+2. Make a copy of the set in a separate directory, e.g. `patched`.
+3. Run:
+  xdelta-mf -f -d \
+    -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
+    -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
+    -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
+    -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
+    spriggan-mark2-english-v1.2.xdelta
 
-Then use the included CUE file to launch the patched image.
+Use the exact source files listed below. The patch will not apply correctly to a different dump.
 
-Use the exact source image listed below. The patch will not apply correctly to a different dump.
-
-Optionally, a corrected CCD file is provided since the patched image is slightly bigger, but most people shouldn't need that.
-
-Checksums
+Hashes
 =========
 
-Expected source image:
+Expected original files:
 
-  TOSEC set:  NEC PC-Engine CD & TurboGrafx-16 CD - Games - [IMG]
-  TOSEC name: Spriggan Mark 2 - Re Terraform Project (1992)(Naxat)(JP)
-  CRC32:      DBE38C87
-  MD5:        bf28ca897aebb9a8c0f49589edc3d6a9
-  SHA-1:      93e68a7202ebd31f84ab173458ba61060a6bebb5
+Redump set:   NEC - PC Engine CD & TurboGrafx CD
+Redump name:  Spriggan Mark 2 - Re Terraform Project (Japan)
 
-Patched output image:
+Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin
+  CRC32:        EB604489
+  MD5:          8679be50ee1c2d12e3d6cd5a0a3d1707
+  SHA-1:        6db64581490afbd5f7c538f31bc63a6f0695dcb7
 
-  CRC32:      A10B9B00
-  MD5:        547c50946df7b59bf9d44cad8efdc79c
-  SHA-1:      63a9090f69ccb0abbf1a2f2049564ea9f7b54c1f
+Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
+  CRC32:        D66E0920
+  MD5:          fc8d1356ea9f828c5a466f29524e6493
+  SHA-1:        eb9b3d55b0acb7e477fd2b262096863c31aacf4d
 
+Patched output images:
+Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin
+Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
 
 ROMhacking.net
 ==============
