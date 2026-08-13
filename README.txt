@@ -30,6 +30,7 @@ The patch modifies Tracks 02 and 37 of the Redump disc image. Apply it with xdel
     -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
     -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
     spriggan-mark2-english-v1.2.xdelta
+4. If there's no error, the files are patched and the archive in patched/ is usable as-is.
 
 Use the exact source files listed below. The patch will not apply correctly to a different dump.
 
