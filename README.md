@@ -54,33 +54,13 @@ English text that was already present in the game hasn't been modified except fo
 
 | File | Description |
 | --- | --- |
-| [`spriggan-mark2-english-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-v1.2.xdelta) | Multifile xdelta patch |
-| [`README.txt`](https://raw.githubusercontent.com/gagnonpl/spriggan-mark2-en/v1.2/README.txt) | Instructions and hashes |
-| [`xdelta-multifile`](https://github.com/gagnonpl/xdelta-multifile/releases) | Patching tool |
-| [`spriggan-mark2-english-track02-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-track02-v1.2.xdelta) | Traditional xdelta patch for track 02 |
-| [`spriggan-mark2-english-track37-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-track37-v1.2.xdelta) | Traditional xdelta patch for track 37 |
+| [`spriggan-mark2-english-track02-v1.3.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track02-v1.3.xdelta) | xdelta patch for track 02 |
+| [`spriggan-mark2-english-track37-v1.3.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track37-v1.3.xdelta) | xdelta patch for track 37 |
+| [`README.txt`](https://raw.githubusercontent.com/gagnonpl/spriggan-mark2-en/v1.3/README.txt) | Instructions and hashes |
+| [`xdelta`](https://github.com/jmacd/xdelta/releases) | Patching tool |
 ## Patching
 
-The patch modifies Tracks 02 and 37 of the Redump disc image. `xdelta-multifile` is used so both files can be patched and verified with a single patch file.
-
-1. Extract the complete Redump BIN/CUE set in a directory, e.g. `original`
-2. Make a copy of the set in a separate directory, e.g. `patched`.
-3. Run:
-```sh
-xdelta-mf -f -d \
-  -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-  -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-  -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-  -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-  spriggan-mark2-english-v1.2.xdelta
-```
-4. If there's no error, the files are patched and the archive in patched/ is usable as-is.
-
-Use the exact source files listed below. The patch will not apply correctly to a different dump.
-
-### Traditional xdelta patches
-
-If xdelta-multifile does not work on your system, Tracks 02 and 37 can also be patched separately with standard xdelta3.
+Tracks 02 and 37 are the data tracks and are patched separately with xdelta3.
 1. Copy the original Track 02 and Track 37 BIN files to the directory where you want the patched files.
 2. Apply each patch separately:
 ```sh
@@ -94,6 +74,8 @@ xdelta3 -f -d \
   spriggan-mark2-english-track37-v1.2.xdelta \
   "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
 ```
+
+Note that track 37 contains a copy of the data in track 02, used for redundancy in case of damage to track 02 by the PCE.  Patching it should only matter if you play with a disc on original hardware.
 
 ## Hashes
 
@@ -120,15 +102,15 @@ xdelta3 -f -d \
 #### `Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin`
 | Hash | Value |
 | --- | --- |
-| CRC32 | C0988FB5
-| MD5 | 9ed3453c7684af7c85b6f8ae2ff24a61
-| SHA-1 | 3516c2e137dbe4b096372db8a04dfe9c5bc66478
+| CRC32 | 0A8F6D71
+| MD5 | 5bec6c62ac159b569f98f6e89f5cee7b
+| SHA-1 | cd84af035e750feff926e41de370cb2eed21f546
 #### `Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin`
 | Hash | Value |
 | --- | --- |
-| CRC32 | 0ABC5022
-| MD5 | e8d817390f8d570e2c76b9827c0769be
-| SHA-1 | 4b0847f2347c248ddc7986925edb37e60bb05b8d
+| CRC32 | C0ABB2E6
+| MD5 | 4489957459ae87a76ed27d855a5e3162
+| SHA-1 | b431c7017ebe6d30c452efae977533dcecf1f3f1
 
 ### ROMhacking.net
 https://www.romhacking.net/translations/7662/

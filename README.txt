@@ -13,30 +13,15 @@ This version provides the following:
 
 Downloads
 =========
-patch: https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-v1.2.xdelta
-xdelta-multifile: https://github.com/gagnonpl/xdelta-multifile/releases
+patches: 
+https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track02-v1.3.xdelta
+https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track37-v1.3.xdelta
+xdelta: https://github.com/jmacd/xdelta/releases
 
 Patching
 ========
 
-The patch modifies Tracks 02 and 37 of the Redump disc image. Apply it with xdelta-multifile:
-
-1. Extract the complete Redump BIN/CUE set.
-2. Make a copy of the set in a separate directory, e.g. `patched`.
-3. Run:
-  xdelta-mf -f -d \
-    -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-    -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-    -s "original/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-    -t "patched/Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-    spriggan-mark2-english-v1.2.xdelta
-4. If there's no error, the files are patched and the archive in patched/ is usable as-is.
-
-Traditional xdelta patches
-=========================
-
-If xdelta-multifile does not work on your system, Tracks 02 and 37 can also be patched separately with standard xdelta3.
-
+Tracks 02 and 37 are the data tracks and are patched separately with xdelta3.
 1. Copy the original Track 02 and Track 37 BIN files to the directory where you want the patched files.
 2. Apply each patch separately:
 xdelta3 -f -d \
@@ -49,6 +34,7 @@ xdelta3 -f -d \
   spriggan-mark2-english-track37-v1.2.xdelta \
   "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
 
+Note that track 37 contains a copy of the data in track 02, used for redundancy in case of damage to track 02 by the PCE.  Patching it should only matter if you play with a disc on original hardware.
 
 Use the exact source files listed below. The patch will not apply correctly to a different dump.
 
@@ -72,7 +58,13 @@ Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
 
 Patched output images:
 Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin
+  CRC32:        0A8F6D71
+  MD5:          5bec6c62ac159b569f98f6e89f5cee7b
+  SHA-1:        cd84af035e750feff926e41de370cb2eed21f546
 Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
+  CRC32:        C0ABB2E6
+  MD5:          4489957459ae87a76ed27d855a5e3162
+  SHA-1:        b431c7017ebe6d30c452efae977533dcecf1f3f1
 
 ROMhacking.net
 ==============
