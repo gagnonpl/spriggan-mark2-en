@@ -57,6 +57,8 @@ English text that was already present in the game hasn't been modified except fo
 | [`spriggan-mark2-english-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-v1.2.xdelta) | Multifile xdelta patch |
 | [`README.txt`](https://raw.githubusercontent.com/gagnonpl/spriggan-mark2-en/v1.2/README.txt) | Instructions and hashes |
 | [`xdelta-multifile`](https://github.com/gagnonpl/xdelta-multifile/releases) | Patching tool |
+| [`spriggan-mark2-english-track02-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-track02-v1.2.xdelta) | Traditional xdelta patch for track 02 |
+| [`spriggan-mark2-english-track37-v1.2.xdelta`](https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.2/spriggan-mark2-english-track37-v1.2.xdelta) | Traditional xdelta patch for track 37 |
 ## Patching
 
 The patch modifies Tracks 02 and 37 of the Redump disc image. `xdelta-multifile` is used so both files can be patched and verified with a single patch file.
@@ -75,6 +77,23 @@ xdelta-mf -f -d \
 4. If there's no error, the files are patched and the archive in patched/ is usable as-is.
 
 Use the exact source files listed below. The patch will not apply correctly to a different dump.
+
+### Traditional xdelta patches
+
+If xdelta-multifile does not work on your system, Tracks 02 and 37 can also be patched separately with standard xdelta3.
+1. Copy the original Track 02 and Track 37 BIN files to the directory where you want the patched files.
+2. Apply each patch separately:
+```sh
+xdelta3 -f -d \
+  -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
+  spriggan-mark2-english-track02-v1.2.xdelta \
+  "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02)-patched.bin"
+
+xdelta3 -f -d \
+  -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
+  spriggan-mark2-english-track37-v1.2.xdelta \
+  "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
+```
 
 ## Hashes
 

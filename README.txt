@@ -32,6 +32,24 @@ The patch modifies Tracks 02 and 37 of the Redump disc image. Apply it with xdel
     spriggan-mark2-english-v1.2.xdelta
 4. If there's no error, the files are patched and the archive in patched/ is usable as-is.
 
+Traditional xdelta patches
+=========================
+
+If xdelta-multifile does not work on your system, Tracks 02 and 37 can also be patched separately with standard xdelta3.
+
+1. Copy the original Track 02 and Track 37 BIN files to the directory where you want the patched files.
+2. Apply each patch separately:
+xdelta3 -f -d \
+  -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
+  spriggan-mark2-english-track02-v1.2.xdelta \
+  "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02)-patched.bin"
+
+xdelta3 -f -d \
+  -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
+  spriggan-mark2-english-track37-v1.2.xdelta \
+  "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
+
+
 Use the exact source files listed below. The patch will not apply correctly to a different dump.
 
 Hashes
