@@ -11,6 +11,8 @@ This version provides the following:
 
 English text that was already present in the game hasn't been modified except for obvious errors.
 
+Note on audio sync: Subtitle and in-level text timing was calibrated for original PC Engine hardware. Audio synchronization can vary substantially under emulation. If the audio and text drift out of sync, especially during in-level dialogs, try another emulator.
+
 <table align="center">
   <tr>
     <td>

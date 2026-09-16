@@ -11,6 +11,10 @@ This version provides the following:
   Translated menus, ending sequence, and credits
   Auto-save QoL feature: Continue from last finished level
 
+English text that was already present in the game hasn't been modified except for obvious errors.
+
+Note on audio sync: Subtitle and in-level text timing was calibrated for original PC Engine hardware. Audio synchronization can vary substantially under emulation. If the audio and text drift out of sync, especially during in-level dialogs, try another emulator.
+
 Downloads
 =========
 patches: 
@@ -37,7 +41,6 @@ Tracks 02 and 37 are the data tracks and are patched separately with xdelta3.
 
 Note that track 37 contains a copy of the data in track 02, used as a redundant copy in case it cannot be read correctly by the PCE.  Patching it should only matter if you play with a disc on original hardware.
 
-Use the exact source files listed below. The patch will not apply correctly to a different dump.
 
 Hashes
 =========
