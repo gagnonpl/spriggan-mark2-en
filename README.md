@@ -66,16 +66,18 @@ Tracks 02 and 37 are the data tracks and are patched separately with xdelta3.
 ```sh
 xdelta3 -f -d \
   -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-  spriggan-mark2-english-track02-v1.2.xdelta \
+  spriggan-mark2-english-track02-v1.3.xdelta \
   "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02)-patched.bin"
 
 xdelta3 -f -d \
   -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-  spriggan-mark2-english-track37-v1.2.xdelta \
+  spriggan-mark2-english-track37-v1.3.xdelta \
   "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
 ```
+3. Replace the original Track 02 and Track 37 files with the patched files, renaming the patched files to their original filenames.
+4. Keep the original .cue file and all other track files unchanged.
 
-Note that track 37 contains a copy of the data in track 02, used for redundancy in case of damage to track 02 by the PCE.  Patching it should only matter if you play with a disc on original hardware.
+Note that track 37 contains a copy of the data in track 02, used as a redundant copy in case it cannot be read correctly by the PCE.  Patching it should only matter if you play with a disc on original hardware.
 
 ## Hashes
 
