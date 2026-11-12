@@ -18,8 +18,8 @@ Note on audio sync: Subtitle and in-level text timing was calibrated for origina
 Downloads
 =========
 patches: 
-https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track02-v1.3.xdelta
-https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.3/spriggan-mark2-english-track37-v1.3.xdelta
+https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.4/spriggan-mark2-english-track02-v1.4.xdelta
+https://github.com/gagnonpl/spriggan-mark2-en/releases/download/v1.4/spriggan-mark2-english-track37-v1.4.xdelta
 xdelta: https://github.com/jmacd/xdelta/releases
 
 Patching
@@ -30,11 +30,11 @@ Tracks 02 and 37 are the data tracks and are patched separately with xdelta3.
 2. Apply each patch separately:
   xdelta3 -f -d \
     -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin" \
-    spriggan-mark2-english-track02-v1.3.xdelta \
+    spriggan-mark2-english-track02-v1.4.xdelta \
     "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02)-patched.bin"
   xdelta3 -f -d \
     -s "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin" \
-    spriggan-mark2-english-track37-v1.3.xdelta \
+    spriggan-mark2-english-track37-v1.4.xdelta \
     "Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37)-patched.bin"
 3. Replace the original Track 02 and Track 37 files with the patched files, renaming the patched files to their original filenames.
 4. Keep the original .cue file and all other track files unchanged.
@@ -62,13 +62,13 @@ Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
 
 Patched output images:
 Spriggan Mark 2 - Re Terraform Project (Japan) (Track 02).bin
-  CRC32:        0A8F6D71
-  MD5:          5bec6c62ac159b569f98f6e89f5cee7b
-  SHA-1:        cd84af035e750feff926e41de370cb2eed21f546
+  CRC32:        03D36967
+  MD5:          7f49832e84ec6f533d3af7a83b0ac04f
+  SHA-1:        4a023dd660d10498283d33701c1bd624de24d46a
 Spriggan Mark 2 - Re Terraform Project (Japan) (Track 37).bin
-  CRC32:        C0ABB2E6
-  MD5:          4489957459ae87a76ed27d855a5e3162
-  SHA-1:        b431c7017ebe6d30c452efae977533dcecf1f3f1
+  CRC32:        C9F7B6F0
+  MD5:          c9c58b4dace8063efc8cabc611be3e23
+  SHA-1:        cba9c31cc6638853bcf1726723d616385274b947
 
 ROMhacking.net
 ==============
